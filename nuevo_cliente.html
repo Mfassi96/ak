@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/encabezado.css">
+    <link rel="stylesheet" href="../styles/lista_clientes.css">
+    <title>Nuevo Cliente</title>
+</head>
+<body>
+    <div class="encabezado">
+        <img src="https://static.wixstatic.com/media/c4bac8_0eddb0e75ecb4a9c89df4eb764a8f0cb~mv2.png/v1/fill/w_247,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c4bac8_0eddb0e75ecb4a9c89df4eb764a8f0cb~mv2.png" alt="Logo">
+    </div>
+    
+    <div class="login-container">
+        <h2>Nuevo Cliente</h2>
+        <form id="clienteForm">
+            <label for="documentoID">Documento de Identidad:</label>
+            <input type="number" id="documentoID" name="documentoID" required><br>
+    
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+    
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required><br>
+
+            </select><br>
+                <label for="localidad">Localidad:</label>
+                <select class="localidad" id="localidad" name="localidad" required>
+                <option value="cba" id="cba">Córdoba</option>
+                <option value="villa_allende" id="villa_allende">Villa Allende</option>
+                <option value="vmaria" id="vmaria">Villa María</option>
+                <option value="merlo" id="merlo">Merlo</option>
+            </select><br>
+    
+            <label for="provincia">Provincia:</label>
+            <select class="provincia" id="provincia" name="provincia" required>
+                <option value="provincia1" id="cba_pcia">Córdoba</option>
+                <option value="provincia2" id="san_luis_pcia">San Luis</option>
+            </select><br>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono" required><br>
+    
+            <label for="telefonoAlternativo">Teléfono Alternativo:</label>
+            <input type="number" id="telefonoAlternativo" name="telefonoAlternativo"><br>
+    
+            <label for="mail">Correo Electrónico:</label>
+            <input type="email" id="mail" name="mail" required><br>
+    
+            <input type="submit" value="Guardar Cliente">
+        </form>
+    </div>
+    <div>
+        <ul id="clienteList"></ul>
+    </div>
+</body>
+<script src="functions/guardar_cliente.js"></script>
+
+</html>

@@ -1,0 +1,29 @@
+/* Estilos para la lista de clientes */
+#clienteList {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#clienteList th, #clienteList td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#clienteList th {
+    background-color: #f2f2f2;
+}
+
+#clienteList tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#clienteList tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilo para la cabecera de la tabla */
+#clienteList th {
+    background-color: #4CAF50;
+    color: white;
+}
